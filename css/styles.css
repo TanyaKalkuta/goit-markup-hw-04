@@ -206,7 +206,7 @@ img {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav .item {
   display: inline-block;
   color: var(--title-cl);
   font-weight: 500;
@@ -226,14 +226,6 @@ img {
 .auth-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-
-.auth-nav .item {
-  display: flex;
-  align-items: baseline;
-  align-items: center;
-  align-self: auto;
-}
-
 .email-icon {
   width: 16px;
   height: 12px;
@@ -243,6 +235,15 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+.link-mail {
+  display: flex;
+  align-items: center;
+}
+
+.link-tell {
+  display: flex;
+  align-items: center;
 }
 
 .link-mail:hover .email-icon {
@@ -396,18 +397,17 @@ img {
   text-align: center;
   background-color: var(--hero-cl);
 }
-.dark-bghero {
+
+.fon-hero {
   display: inline-flex;
   width: 1600px;
   height: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-  background-image: url("../images/herofoto.jpg");
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/herofoto.jpg") no-repeat center;
 }
 
 .hero-title {
