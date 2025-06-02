@@ -233,7 +233,6 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
-  padding: 24px 100px;
 }
 .advantages-svg {
   display: block;
@@ -258,11 +257,13 @@ img {
 .team .section-text {
   text-align: center;
 }
+.section-text.team-p {
+  margin-bottom: 8px;
+}
 .team-icon-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding: 8px 16px 0;
 }
 .team-icon-link {
   border-radius: 50%;
@@ -323,10 +324,12 @@ img {
 .portfolio-item:hover .overlay {
   transform: translateY(0);
 }
-.page-footer .container {
+.page-footer {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.page-footer .container {
   display: flex;
   align-items: baseline;
 }
